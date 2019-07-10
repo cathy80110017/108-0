@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" height="512" width="512">
+
+  <rect width="512" height="512" stroke="red" fill="white"/>
+
+  <path d="
+    M200 50
+    C
+    100 10 417 13 410 40 
+    402 100 357 236 500 400 
+    200 400 500 384 100 50z" fill="none" stroke="#000" stroke-width="1px"/>
+
+  <circle fill="Lavender" stroke="#f0f" cx="120" cy="44" r="16" opacity="0.2">
+    <animate attributeName="opacity" to="1" begin="0s" dur="0.5s" fill="freeze" repeatCount="0" />
+  </circle>
+
+  <circle fill="Lavender" stroke="#f0f" cx="140" cy="61" r="16" opacity="0.2">
+    <animate attributeName="opacity" to="1" begin="0.8s" dur="0.5s" fill="freeze" repeatCount="0" />
+  </circle>
+
+  <circle fill="Lavender" stroke="#f0f" cx="165" cy="85" r="16" opacity="0.2">
+    <animate attributeName="opacity" to="1" begin="1.2s" dur="0.5s" fill="freeze" repeatCount="0" />
+  </circle>
+
+  <circle fill="Lavender" stroke="#f0f" cx="190" cy="108" r="16" opacity="0.2">
+    <animate attributeName="opacity" to="1" begin="1.6s" dur="0.5s" fill="freeze" repeatCount="0" />
+  </circle>
+
+  <circle fill="Lavender" stroke="#f0f" cx="223" cy="140" r="16" opacity="0.2">
+    <animate attributeName="opacity" to="1" begin="2s" dur="0.5s" fill="freeze" repeatCount="0" />
+  </circle>
+
+  <circle fill="Lavender" stroke="#f0f" cx="260" cy="180" r="16" opacity="0.2">
+    <animate attributeName="opacity" to="1" begin="2.4s" dur="0.5s" fill="freeze" repeatCount="0" />
+  </circle>
+
+  <circle fill="Lavender" stroke="#f0f" cx="315" cy="255" r="16" opacity="0.2">
+    <animate attributeName="opacity" to="1" begin="2.8s" dur="0.5s" fill="freeze" repeatCount="0" />
+  </circle>
+
+  <circle fill="Lavender" stroke="#f0f" cx="370" cy="375" r="16" opacity="0.2">
+    <animate attributeName="opacity" to="1" begin="3.1s" dur="0.5s" fill="freeze" repeatCount="0" />
+  </circle>
+
+  <circle fill="Lavender" stroke="#f0f" cx="390" cy="380" r="16" opacity="0.2">
+    <animate attributeName="opacity" to="1" begin="3.3s" dur="0.5s" fill="freeze" repeatCount="0" />
+  </circle> 
+
+  <circle fill="Lavender" stroke="#f0f" cx="422" cy="382" r="16" opacity="0.2">
+    <animate attributeName="opacity" to="1" begin="3.5s" dur="0.5s" fill="freeze" repeatCount="0" />
+  </circle>
+
+  <circle fill="Lavender" stroke="#f0f" cx="460" cy="383" r="16" opacity="0.2">
+    <animate attributeName="opacity" to="1" begin="3.8s" dur="0.5s" fill="freeze" repeatCount="0" />
+  </circle>
+
+
+
+
+
+
+
+ <text x="2" y="12" font-size="12" text-anchor="start" fill="red">0</text>
+  <path d="M256  64 H0 H512" stroke="lightgray" fill="white"></path>
+  <text x="2" y="64" font-size="12" text-anchor="start" fill="red">64</text>
+  <path d="M256 128 H0 H512" stroke="lightgray" fill="white"></path>
+  <text x="2" y="128" font-size="12" text-anchor="start" fill="red">128</text>
+  <path d="M256 192 H0 H512" stroke="lightgray" fill="white"></path>
+  <text x="2" y="192" font-size="12" text-anchor="start" fill="red">192</text>
+  <path d="M256 256 H0 H512" stroke="lightgray" fill="white"></path>
+  <text x="2" y="256" font-size="12" text-anchor="start" fill="red">256</text>
+  <path d="M256 320 H0 H512" stroke="lightgray" fill="white"></path>
+  <text x="2" y="320" font-size="12" text-anchor="start" fill="red">320</text>
+  <path d="M256 384 H0 H512" stroke="lightgray" fill="white"></path>
+  <text x="2" y="384" font-size="12" text-anchor="start" fill="red">384</text>
+  <path d="M256 448 H0 H512" stroke="lightgray" fill="white"></path>
+  <text x="2" y="448" font-size="12" text-anchor="start" fill="red">448</text>
+  <text x="2" y="512" font-size="12" text-anchor="start" fill="red">512</text>
+
+  <path d="M64  0 V512" stroke="lightgray" fill="white"></path>
+  <text x="64" y="12" font-size="12" text-anchor="start" fill="red">64</text>
+  <path d="M128  0 V512" stroke="lightgray" fill="white"></path>
+  <text x="128" y="12" font-size="12" text-anchor="start" fill="red">128</text>
+  <path d="M195  0 V512" stroke="lightgray" fill="white"></path>
+  <text x="192" y="12" font-size="12" text-anchor="start" fill="red">192</text>
+  <path d="M256  0 V512" stroke="lightgray" fill="white"></path>
+  <text x="256" y="12" font-size="12" text-anchor="start" fill="red">256</text>
+  <path d="M320  0 V512" stroke="lightgray" fill="white"></path>
+  <text x="320" y="12" font-size="12" text-anchor="start" fill="red">320</text>
+  <path d="M384  0 V512" stroke="lightgray" fill="white"></path>
+  <text x="384" y="12" font-size="12" text-anchor="start" fill="red">384</text>
+  <path d="M448  0 V512" stroke="lightgray" fill="white"></path>
+  <text x="448" y="12" font-size="12" text-anchor="start" fill="red">448</text>
+  <text x="512" y="12" font-size="12" text-anchor="start" fill="red">512</text>
+
+</svg>
