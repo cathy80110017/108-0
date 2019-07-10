@@ -1,22 +1,119 @@
-$(function(){
 
-	var Array=['ace-of-club.svg',
-			'ace-of-diamonds.svg',
-			'ace-of-hearts.svg',
-			'ace-of-spades.svg'];
+function update(){
+	$('.club').attr("src","./ace-of-club.svg");
+	$('.diamonds').attr("src","./ace-of-diamonds.svg");
+	$('.hearts').attr("src","./ace-of-hearts.svg");
+	$('.spades').attr("src","./ace-of-spades.svg");
+	$('.back').attr("src","./joker-card.svg");
+}
 
-	for(var i=0;i<16;i++){
+function issuecard(){
+
+	var club=0, diamonds=0, hearts=0, spades=0;
+
+	for(var i=0;i<16;){
 		var a=Math.floor(Math.random()*4);
-		$('#d2').append('<img class="issue" src="./'+Array[a]+'">');
+		if((a==0)&&(club<4)){
+			club++;
+			$('#d2').append('<img class="issue club" id="img'+i+'">');
+			i++;
+		}
+		else if ((a==1)&&(diamonds<4)) {
+			diamonds++;
+			$('#d2').append('<img class="issue diamonds" id="img'+i+'">');
+			i++;
+		}
+		else if ((a==2)&&(hearts<4)) {
+			hearts++;
+			$('#d2').append('<img class="issue hearts" id="img'+i+'">');
+			i++;
+		}
+		else if ((a==3)&&(spades<4)) {
+			spades++;
+			$('#d2').append('<img class="issue spades" id="img'+i+'">');
+			i++;
+		}
+		else{
+			continue;
+		}
+
+		$('.issue').hide().fadeIn(500);
 	}
+}
+
+$(function(){
+	issuecard();
+	update();
 
 	$("#b1").on('click', function(){
-		$('.issue').hide();
-		$('#d2').html('');
-	
+		$('.issue').addClass("back");
+		update();
+	});
 
-		for(var i=0;i<16;i++){
-			$('#d2').append('<img src="./joker-card.svg">');
+	flip=0;
+	var first='';
+	var second='';
+
+	$(".issue").on('click', function(){
+		flip=$('#i1').val();
+
+		$(this).removeClass("back");
+		update();
+
+		$(this).addClass("selected");
+
+		if(flip==0){
+			$('#1').val(1);
+			$('#4').val(this.id);
+
+			if($(this).hasClass("club")){
+				first='club';
+			}
+			else if ($(this).hasClass("diamonds")) {
+				first='diamonds';
+			}
+			else if ($(this).hasClass("hearts")) {
+				first='hearts';
+			}
+			else{
+				first='spade';
+			}
+			$('#i2').val(first);
 		}
+		else if (flip==1) {
+			$('#i1').val(2);
+			$('#i5').val(this.id);
+
+			if($(this).hasClass("club")){
+				second='club';
+			}
+			else if ($(this).hasClass("diamonds")) {
+				second='diamonds';
+			}
+			else if ($(this).hasClass("hearts")) {
+				second='hearts';
+			}
+			else{
+				second='spade';
+			}
+			$('#i3').val(second);
+
+			var myid1='#'+$('#i4').val();
+			var myid2='#'+$('#i5').val();
+
+			if(first==second){
+				setTimeout(function(){
+
+					
+
+					$('#i2').val(first);
+					$('#i3').val(second);
+					$('#i1').val(0);
+					$('#i4').val('');
+					$('#i5').val('');
+				});
+			}
+		}
+
 	});
 });
