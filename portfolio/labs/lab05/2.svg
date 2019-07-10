@@ -8,7 +8,12 @@
   <rect x="160" y="192" width="30" height="50" rx="512" ry="512" stroke="pink" fill="pink"></rect>
   <rect x="320" y="192" width="30" height="50" rx="512" ry="512" stroke="pink" fill="pink"></rect>
   <path stroke-width="5" d="M100 256 L30 256" stroke="pink"/>
+  <path stroke-width="5" d="M100 240 L30 230" stroke="pink"/>
+  <path stroke-width="5" d="M100 272 L30 282" stroke="pink"/>
+
+  <path stroke-width="5" d="M400 256 L490 256" stroke="pink"/>
+  <path stroke-width="5" d="M400 240 L490 230" stroke="pink"/>
+  <path stroke-width="5" d="M400 272 L490 282" stroke="pink"/>
 
 
-  
 </svg>
