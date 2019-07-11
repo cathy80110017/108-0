@@ -36,9 +36,8 @@ function issuecard(){
 		else{
 			continue;
 		}
-
-		$('.issue').hide().fadeIn(500);
 	}
+	$('.issue').hide().fadeIn(1000);
 }
 
 $(function(){
@@ -76,7 +75,7 @@ $(function(){
 				first='hearts';
 			}
 			else{
-				first='spade';
+				first='spades';
 			}
 			$('#i2').val(first);
 		}
@@ -94,7 +93,7 @@ $(function(){
 				second='hearts';
 			}
 			else{
-				second='spade';
+				second='spades';
 			}
 			$('#i3').val(second);
 
@@ -104,16 +103,36 @@ $(function(){
 			if(first==second){
 				setTimeout(function(){
 
-					
+					$(myid1).addClass('done');
+					$(myid2).addClass('done');
 
+					first='';
+					second='';
+					$('#i1').val(0);
+					$('#i2').val(first);
+					$('#i3').val(second);
+					$('#i4').val('');
+					$('#i5').val('');
+				},500);
+			}
+			else{
+				setTimeout(function(){
+					$(myid1).removeClass('selected');
+					$(myid2).removeClass('selected');
+					$(myid1).addClass('back');
+					$(myid2).addClass('back');
+					update();
+					alert('try again');
+					first='';
+					second='';
 					$('#i2').val(first);
 					$('#i3').val(second);
 					$('#i1').val(0);
 					$('#i4').val('');
 					$('#i5').val('');
-				});
+				},500);
 			}
 		}
-
+		update();
 	});
 });
