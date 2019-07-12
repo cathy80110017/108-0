@@ -37,7 +37,7 @@ function analyze() {
       //var subs2=subs2.replace('462','262');
 
       var path= image.path(subs).fill('none').stroke({color:'red',width:5}).draggable();
-     // path.plot(subs2).draggable(); 
+     // path.plot(subs2).draggable();
 
       var newPath=Snap.path.toCubic(subs);
       console.log('newPath=' + newPath);
