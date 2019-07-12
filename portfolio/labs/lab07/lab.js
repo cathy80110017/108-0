@@ -40,7 +40,7 @@ function analyze() {
       var subs2=subs2.replace('462','262');
 
       var path= image.path(subs).fill('none').stroke({color:'red',width:5}).draggable();
-     /* path.plot(subs2).draggable();
+      path.plot(subs2).draggable();
 
       var newPath=Snap.path.toCubic(subs);
       console.log('newPath=' + newPath);
@@ -53,17 +53,16 @@ function analyze() {
         for (var  j= 0; j < newPath[i].length; j++) {
           console.log('newPath['+i+'][j]'+newPath[i][j]);
         }
-      
 
-      if(i==0){
-        var circle=image.circle(20).fill('red').stroke('blue').move(newPath[i][1]-10, newPath[i][2]-10).draggable();
+        if(i==0){
+          var circle=image.circle(20).fill('red').stroke('blue').move(newPath[i][1]-10, newPath[i][2]-10).draggable();
+        }
+        else{
+          var circle=image.circle(20).fill('pink').stroke('blue').move(newPath[i][1]-10, newPath[i][2]-10).draggable();
+          var circle=image.circle(20).fill('pink').stroke('blue').move(newPath[i][3]-10, newPath[i][4]-10).draggable();
+          var circle=image.circle(20).fill('pink').stroke('blue').move(newPath[i][5]-10, newPath[i][6]-10).draggable();
+        }
       }
-      else{
-        var circle=image.circle(20).fill('pink').stroke('blue').move(newPath[i][1]-10, newPath[i][2]-10).draggable();
-        var circle=image.circle(20).fill('pink').stroke('blue').move(newPath[i][3]-10, newPath[i][4]-10).draggable();
-        var circle=image.circle(20).fill('pink').stroke('blue').move(newPath[i][5]-10, newPath[i][6]-10).draggable();
-      }
-     }*/
 
 /*      for(var i=0;i<(newPath.length-1);i++){
         var segment=newPath[i], point;
