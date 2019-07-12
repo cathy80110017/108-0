@@ -1,6 +1,3 @@
-/*
-
-*/
 
 function analyze() {
     var m, n;
@@ -36,7 +33,7 @@ function analyze() {
       subs = remain.slice(m, n+1); // z 也要包含
       console.log('subs = ' + subs);
 
-      var subs2=subs.replace('440', '480');
+      var subs2=subs.replace('200', '480');
       var subs2=subs2.replace('462','262');
 
       var path= image.path(subs).fill('none').stroke({color:'red',width:5}).draggable();
