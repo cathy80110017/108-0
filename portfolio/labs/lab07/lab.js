@@ -6,7 +6,7 @@ function analyze() {
     var m, n;
 
     var remain = document.getElementById('content').textContent;
-    //console.log('remain = ' + remain);
+    console.log('remain = ' + remain);
 
     var subs = '';
 
@@ -19,7 +19,7 @@ function analyze() {
       console.log('m = ' + m);
       remain = remain.slice(m);
 
-      if ( m == -1){ // skip 
+      if ( m == -1){ // skip
         return;
       }
 
@@ -31,6 +31,11 @@ function analyze() {
 
       subs = remain.slice(m, n+1); // z 也要包含
       console.log('subs = ' + subs);
+
+      var subs2=subs.replace('440', '480');
+      var subs2=subs2.replace('462','262');
+
+      var path= image.path(subs).fill('none').stroke({color:'red',width:5}).draggable();
 
       remain = remain.slice(n+1); // z 也要移除
       //console.log('remain = ' + remain);
@@ -63,7 +68,6 @@ function analyze() {
       console.log('temp[1] = ' + temp[1]);
 
 
-      
       var x, y;
       x = parseInt(temp[0],10);
       y = parseInt(temp[1],10);
@@ -196,7 +200,7 @@ function start(e) {
     document.getElementById("files").style.color = "Crimson";
   }, 500);
 
-  setInterval(function(){ 
+  setInterval(function(){
     document.getElementById("drop_zone").style.borderColor = "gray";
     document.getElementById("drop_zone").style.color = "gray";
     document.getElementById("files").style.color = "gray";

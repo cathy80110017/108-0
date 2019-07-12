@@ -62,8 +62,8 @@ $(function(){
 		$(this).addClass("selected");
 
 		if(flip==0){
-			$('#1').val(1);
-			$('#4').val(this.id);
+			$('#i1').val(1);
+			$('#i4').val(this.id);
 
 			if($(this).hasClass("club")){
 				first='club';
