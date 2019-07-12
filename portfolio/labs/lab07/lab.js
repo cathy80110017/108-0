@@ -210,6 +210,23 @@ function handleDragOver(evt) {
 
 function start(e) {
 
+  $(document).mousemove(function(event){
+    var p=$("#svgimage2");
+
+    var position = p.position();
+    console.log('position='+position.left+','+position.top);
+
+    var myX=event.pageX-Math.round(position.left);
+    var myY=event.pageY-Math.round(position.top)+500;
+
+    $("#s5").html("<div style='position:absolute; border-style:none; TOP:"
+      +event.pageY+"px;LEFT:"
+      +event.pageX+"px;'>"+"&nbsp&nbsp&nbsp&nbsp("
+      +myX+","
+      +myY+")"
+      +"</div>");
+  });
+
   document.getElementById('files').addEventListener('change', handleFileSelect, false);
 
   var dropZone = document.getElementById('drop_zone');
