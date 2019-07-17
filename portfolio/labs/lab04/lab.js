@@ -79,7 +79,7 @@ $(function(){
 			}
 			$('#i2').val(first);
 		}
-		else if (flip==1) {
+		else if ((flip==1)&&()) {
 			$('#i1').val(2);
 			$('#i5').val(this.id);
 
